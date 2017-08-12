@@ -9,7 +9,7 @@
         '<!(node -e "require(\'nan\')")'
       ],
       'conditions': [
-        ['OS=="linux"', {
+        ['OS!="win"', {
           'cflags': [
             '<!@(pkg-config --cflags ao)'
           ],
